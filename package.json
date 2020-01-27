@@ -1,0 +1,16 @@
+{
+  "name": "flowers-e-shop",
+  "version": "1.0.0",
+  "description": "> This is my seventh project in the HTML/CSS section of the Microverse main curriculum. The main goal of this milestone is to equip the learner with the ability to design responsive layouts, using bootstrap framework thus implementing different styles at certain breaking points.",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
