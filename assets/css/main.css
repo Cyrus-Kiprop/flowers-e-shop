@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  max-width: 1310px;
+  /* background-color: #60c548; */
+
+  background-color: rgb(96, 197, 72);
+}
+
+nav {
+  height: 150px;
+  color: #cbfcbd;
+  font-weight: bold;
+  font-family: serif;
+}
+
+nav span {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .heart {
+  background-color: #81ce4d;
+}
+
+nav .cart {
+  background-color: red;
+  position: relative;
+}
+
+.logo p {
+  font-size: 18px;
+}
+
+nav .cart::before {
+  display: table;
+  content: "2";
+  height: 13px;
+  position: absolute;
+  left: -6px;
+  line-height: 14px;
+  bottom: -3px;
+  /* padding: 0 5px; */
+  width: 13px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 9px;
+  color: grey;
+  background-color: white;
+}
+
+/* Main section  */
+
+.welcome-section {
+  height: 100vh;
+  background: url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
+    no-repeat;
+  background-size: 700px 100%;
+}
