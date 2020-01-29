@@ -16,9 +16,13 @@ So far this is my biggest achievement.
   -Bootstrap Framework
 - CSS
 
-## Preview
+## Preview:
 
 [Preview Link](https://raw.githack.com/Cyrus-Kiprop/flowers-e-shop/main-feature-branch/main-page.html)
+
+## Sources:
+
+[Wireframe Link](https://www.behance.net/gallery/69329213/Flower-e-shop)
 
 ## Author
 
