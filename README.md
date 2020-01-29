@@ -1,8 +1,14 @@
-# HTML Responsive Design - The News Week Project
+# Capstone - The Flower-e-shop
 
-> This is my seventh project in the HTML/CSS section of the Microverse main curriculum. The main goal of this milestone is to equip the learner with the ability to design responsive layouts, using bootstrap framework thus implementing different styles at certain breaking points.
+> This is my last but not least project in the HTML/CSS section of the Microverse main curriculum. The main goal of this milestone is to enable the learner to apply the newly acquired HTML and CSS skills in designing a real world capstone project that is fully responsive and eye captivating. In this project, I purely demonstrate mastery in the following areas:
 
-This has been by far my biggest and most complex assignment, but I learned a great deal in responsive design especially using bootstrap framework.
+- Proper use of HTML semantics, and elements, and their respective attributes
+- UI/UX design using CSS,
+  -CSS pseudo selectors and classes
+- Typography ,
+- Bootstrap classes for responsive design
+
+So far this is my biggest achievement.
 
 ## Built With
 
@@ -12,9 +18,9 @@ This has been by far my biggest and most complex assignment, but I learned a gre
 
 ## Preview
 
-[Preview Link](https://rawcdn.githack.com/Cyrus-Kiprop/the-news-week/5aef8cd88b9962744fbd6aacae1ecd0e48a98b4c/index.html)
+[Preview Link](https://raw.githack.com/Cyrus-Kiprop/flowers-e-shop/main-feature-branch/main-page.html)
 
-## Authors
+## Author
 
 👤 **Cyrus Kiprop**
 
