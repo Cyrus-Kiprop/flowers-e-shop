@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+
+
+    <!-- the nav bar -->
+    <nav
+      class="container align-items-center  d-flex px-5 justify-content-between "
+    >
+      <div class="logo d-flex align-items-center">
+        <a href="#">
+          <img src="/assets/images/flower-logo.jpeg" alt="Company Logo" />
+        </a>
+        <p class="m-0 pl-1">Fleur Flowers</p>
+      </div>
+
+      <div class="nav-right d-flex align-items-center">
+        <div
+          class="d-md-flex d-none align-items-end justify-content-center mr-3"
+        >
+          <a href="/product-list.html" class="mx-3">Home</a>
+          <a  href="/product-list.html" class="mx-3">Products</a>
+          <a  href="/product-list.html" class="mx-3">Contacts</a>
+        </div>
+        <span class="heart  d-md-none"><i class="fas fa-bars"></i></span>
+        <span class="heart"><i class="fas fa-heart"></i></span>
+        <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+      </div>
+    </nav>
+
+    <!-- the main section -->
+
+    <main class="container product-list white">
+      <section>
+        <h2 class="product-page-header">
+          Products list
+        </h2>
+
+        <!-- Filter and product list container -->
+
+        <div class="row">
+          <div class="col-12 col-md-3 ">
+            <div
+              class="filter-section d-flex flex-column align-items-center justify-content-center"
+            >
+              <!-- show mainly on small devices -->
+              <div class="my-4 d-block d-md-none dropdown show btn-sm-filter">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                <i class="fas fa-filter"></i>
+                  Sort/Filter
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <h5>Price</h5>
+                  <div class="filter-bar position-relative">
+                    <div class="track-progress"></div>
+                    <div class="bar"></div>
+                  </div>
+  
+                  <div class="min-max-price">
+                    <input type="number" class="btn " placeholder="999" />
+                    <input type="number" class="btn " placeholder="31500" />
+                  </div>
+  
+                  <h3>Color</h3>
+  
+                  <div class="color-container flex-row-xd  my-2">
+                    <div class="color-item flex-row-xd justify-content-center">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="color-item"></div>
+                    <div class="color-item"></div>
+                    <div class="color-item"></div>
+                    <div class="color-item"></div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- large screen elements -->
+
+              <div
+                class="filter-by-price card mt-4 p-4 d-none d-md-block flower-item"
+              >
+                <h3>Price</h3>
+
+                <div class="filter-bar position-relative">
+                  <div class="track-progress"></div>
+                  <div class="bar"></div>
+                </div>
+
+                <div class="min-max-price">
+                  <input type="number" class="btn " placeholder="999" />
+                  <input type="number" class="btn " placeholder="31500" />
+                </div>
+
+                <h3>Color</h3>
+
+                <div class="color-container flex-row-xd  my-2">
+                  <div class="color-item flex-row-xd justify-content-center">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="color-item"></div>
+                  <div class="color-item"></div>
+                  <div class="color-item"></div>
+                  <div class="color-item"></div>
+                </div>
+
+                <div class="categories">
+                  <h3>Categories</h3>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="categories">
+                  <h3>Name</h3>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="checkbox-container"
+                    >Lorem, ipsum dolor.
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class=" d-flex align-items-center justify-content-start">
+                  <button
+                    type="button"
+                    class="btn btn-danger mt-4  py-1 flower-btn filter-submit"
+                  >
+                    Lorem ipsum
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="row">
+              <!-- flower item in the list -->
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card ">
+                  <div class="flower-item">
+                    <span class="heart heart-2 px-3 pt-3"
+                      ><i class="far fa-heart"></i
+                    ></span>
+
+                    <a href="/product-page.html">
+                      <img
+                        class="card-img-top"
+                        src="/assets/images/image-4.png"
+                        alt="Card image cap"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Orchad</h5>
+                    <div
+                      class="price-buttons d-flex align-items-center justify-content-between"
+                    >
+                      <a href="/product-page.html" class="btn btn-price first"
+                        >$10</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$15</a
+                      >
+                      <a
+                        href="/product-page.html"
+                        class="btn btn-price flower-item"
+                        >$20</a
+                      >
+                    </div>
+                    <div class="add-to-cart my-3 pl-2 font-weigth-bold">
+                      <span>1039</span>
+                      <a href="/product-page.html">
+                        <i class="fas fa-shopping-cart cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="white">
+      <!--Maps -->
+      <div class="container .white  px-0">
+        <h2 class="d-none">
+          Hidden staff
+        </h2>
+
+        <div class="map"></div>
+      </div>
+
+      <!-- Footer content -->
+      <div class="container  p-5 white  ">
+        <div class="row footer-content">
+          <div class="col-12 col-md-4">
+            <div class=" d-flex align-items-center justify-content-center">
+              <button
+                type="button"
+                class="btn border-0 btn-danger flower-btn bg-success contact-us"
+              >
+                <span>Contact us</span><i class="fas fa-envelope-square"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12  col-md-4">
+            <ul class="footer-links my-4">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">+7 (987) 654-32-10</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+            </ul>
+          </div>
+          <!-- <div class="col-12 col-md-4">3</div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

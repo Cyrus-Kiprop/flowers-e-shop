@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <title>Document</title>
+    <title>Fleur Flowers</title>
   </head>
   <body>
     <!-- navigation bar -->
@@ -30,9 +30,9 @@
         <div
           class="d-md-flex d-none align-items-end justify-content-center mr-3"
         >
-          <a class="mx-3">Home</a>
-          <a class="mx-3">Products</a>
-          <a class="mx-3">Contacts</a>
+          <a href="/product-list.html" class="mx-3">Home</a>
+          <a href="/product-list.html" class="mx-3">Products</a>
+          <a href="/product-list.html" class="mx-3">Contacts</a>
         </div>
         <span class="heart  d-md-none"><i class="fas fa-bars"></i></span>
         <span class="heart"><i class="fas fa-heart"></i></span>
@@ -44,7 +44,9 @@
       <div class="row">
         <div class="col-12 welcome-section">
           <div class="row  mx-4">
-            <div class="col-12 col-md-5  welcome-info d-flex flex-column justify-content-between align-items-center text-center text-md-left ">
+            <div
+              class="col-12 col-md-5  welcome-info d-flex flex-column justify-content-between align-items-start text-center text-md-left "
+            >
               <div>
                 <h2>Lorem ipsum dolor sit amet, consectetur</h2>
                 <h3>Lorem ipsum dolor sit amet.</h3>
@@ -52,7 +54,7 @@
                   Welcome to FleurFlowers
                 </button>
               </div>
-              <span>+7 (987) 654-32-10</span>
+              <span class="d-none d-md-block">+7 (987) 654-32-10</span>
             </div>
           </div>
         </div>
@@ -495,51 +497,44 @@
           </div>
         </div>
       </section>
-
-      
-
-     
     </main>
 
+    <footer class="white container">
+      <!--Maps -->
+      <div class="container .white  px-0">
+        <h2 class="d-none">
+          Hidden staff
+        </h2>
 
-    <footer class="white mx-auto">
-<!--Maps -->
-<div class="container .white mx-0 px-0">
-  <h2 class="d-none">
-    Hidden staff
-  </h2>
+        <div class="map"></div>
+      </div>
 
-  <div class="map"></div>
-</div>
+      <!-- Footer content -->
+      <div class="container  p-5 white  ">
+        <div class="row footer-content">
+          <div class="col-12 col-md-4">
+            <div class=" d-flex align-items-center justify-content-center">
+              <button
+                type="button"
+                class="btn border-0 btn-danger flower-btn bg-success contact-us"
+              >
+                <span>Contact us</span><i class="fas fa-envelope-square"></i>
+              </button>
+            </div>
+          </div>
 
-<!-- Footer content -->
-      <div class="container m-0 p-5 white  ">
-<div class="row footer-content">
-  <div class="col-12 col-md-4">
-    <div class=" d-flex align-items-center justify-content-center">
-      <button type="button" class="btn border-0 btn-danger flower-btn bg-success contact-us">
-       <span>Contact us</span><i class="fas fa-envelope-square"></i>
-      </button>
-    </div>
-
-  </div>
-
-  <div class="col-12  col-md-4">
-    <ul class="footer-links my-4">
-      <li><a href="#">Lorem ipsum</a></li>
-      <li><a href="#">Lorem ipsum</a></li>
-      <li><a href="#">+7 (987) 654-32-10</a></li>
-      <li><a href="#">Lorem ipsum</a></li>
-      <li><a href="#">Lorem ipsum</a></li>
-      <li><a href="#">Lorem ipsum</a></li>
-
-     
-     
-    </ul>
-  </div>
-  <!-- <div class="col-12 col-md-4">3</div> -->
-
-</div>
+          <div class="col-12  col-md-4">
+            <ul class="footer-links my-4">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">+7 (987) 654-32-10</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Lorem ipsum</a></li>
+            </ul>
+          </div>
+          <!-- <div class="col-12 col-md-4">3</div> -->
+        </div>
       </div>
     </footer>
 
