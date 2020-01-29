@@ -3,8 +3,6 @@
 .container {
   width: 100%;
   max-width: 1310px;
-  /* background-color: #60c548; */
-
   background-color: rgb(96, 197, 72);
 }
 
@@ -48,7 +46,6 @@ nav .cart::before {
   left: -6px;
   line-height: 14px;
   bottom: -3px;
-  /* padding: 0 5px; */
   width: 13px;
   text-align: center;
   border-radius: 50%;
@@ -61,6 +58,19 @@ nav .cart::before {
   color: #cbfcbd;
 }
 
+.btn-sm-filter a {
+  background-color: white !important;
+  border: 2px solid rgb(13, 241, 13) !important;
+  color: rgb(13, 241, 13) !important;
+  width: 100%;
+  border-radius: 4px;
+  outline: none !important;
+}
+
+.footer-links li a {
+  color: gray;
+}
+
 .nav-right a:hover {
   color: white;
   text-decoration: none;
@@ -70,11 +80,10 @@ nav .cart::before {
   background-color: rgb(96, 197, 72);
 }
 
-/* Main section  */
-
 .welcome-section {
   height: 500px;
-  background: url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
+  background:
+    url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
     no-repeat;
   background-size: 700px 600px;
   font-family: serif;
@@ -95,6 +104,7 @@ nav .cart::before {
 .welcome-info {
   margin-top: 80px;
 }
+
 .welcome-section h2 {
   font-size: 28px;
   font-weight: bold;
@@ -146,7 +156,6 @@ nav .cart::before {
 }
 
 .price i {
-  font-size: 13px;
   color: purple;
   font-size: 11px;
 }
@@ -231,6 +240,7 @@ nav .cart::before {
 .price-buttons .first {
   border: 1px solid greenyellow;
 }
+
 .btn-price {
   border-radius: 24px;
   font-size: 10px;
@@ -362,15 +372,15 @@ nav .cart::before {
   color: gray;
 }
 
-.footer-links li a {
-  color: gray;
+.btn-sm-filter a:hover {
+  background-color: rgb(13, 241, 13) !important;
+  color: white !important;
+  border: none;
 }
 
 .footer-links li a:nth-child(even) {
   text-decoration: underline;
 }
-
-/* product list styling */
 
 .product-list {
   padding: 40px 60px;
@@ -411,7 +421,7 @@ nav .cart::before {
   background-color: green;
 }
 
-.track-progress:before {
+.track-progress::before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -424,7 +434,7 @@ nav .cart::before {
   background-color: white;
 }
 
-.track-progress:after {
+.track-progress::after {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -444,8 +454,6 @@ nav .cart::before {
   width: 150px;
   background-color: gray;
 }
-
-/* price inputs */
 
 .min-max-price {
   display: flex;
@@ -490,20 +498,25 @@ nav .cart::before {
   background-color: rgb(59, 10, 172);
 }
 
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  color: black;
+}
+
 .categories .form-check input {
   outline: none;
   outline: 2px solid green;
 }
 
-/* filter checkbox styling */
-
 .checkbox-container {
-  display: block;
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -514,17 +527,6 @@ nav .cart::before {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Hide the browser's default checkbox */
-.checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-  color: black;
-}
-
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 4px;
@@ -535,33 +537,16 @@ nav .cart::before {
   border: 1px solid green;
 }
 
-/* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
-  /* background-color: #ccc; */
-}
-
-/* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
-  /* background-color: #2196f3; */
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.checkmark::after {
   content: "";
   position: absolute;
   display: none;
   top: 6px;
 }
 
-/* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
+.checkbox-container .checkmark::after {
   left: 3px;
-  top: 0px;
+  top: 0;
   width: 5px;
   height: 10px;
   border: solid grey;
@@ -571,16 +556,14 @@ nav .cart::before {
   transform: rotate(45deg);
 }
 
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
 .filter-submit {
   font-size: 16px;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-/* product page styling */
-
-.green {
-  background-color: green !important;
 }
 
 .light-green {
@@ -614,30 +597,6 @@ nav .cart::before {
   font-size: 18px;
 }
 
-/* .box-shadow {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px 10px #114107;
-} */
-
 .btn-sm-filter {
   width: 100%;
-}
-.btn-sm-filter a {
-  background-color: white !important;
-  border: 2px solid rgb(13, 241, 13) !important;
-  color: rgb(13, 241, 13) !important;
-  width: 100%;
-  border-radius: 4px;
-  outline: none !important;
-  /*
-  display: block;
-  font-weight: bold;
-   */
-}
-
-.btn-sm-filter a:hover {
-  background-color: rgb(13, 241, 13) !important;
-  color: white !important;
-  border: none;
 }
