@@ -71,6 +71,10 @@ nav .cart::before {
   color: gray;
 }
 
+.links-even {
+  text-decoration: underline;
+}
+
 .nav-right a:hover {
   color: white;
   text-decoration: none;
