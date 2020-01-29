@@ -629,9 +629,15 @@ nav .cart::before {
   color: rgb(13, 241, 13) !important;
   width: 100%;
   border-radius: 4px;
+  outline: none !important;
   /*
   display: block;
-  outline: none;
   font-weight: bold;
    */
+}
+
+.btn-sm-filter a:hover {
+  background-color: rgb(13, 241, 13) !important;
+  color: white !important;
+  border: none;
 }
