@@ -86,7 +86,8 @@ nav .cart::before {
 
 .welcome-section {
   height: 500px;
-  background: url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
+  background:
+    url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
     no-repeat;
   background-size: 700px 600px;
   font-family: serif;
@@ -279,7 +280,6 @@ nav .cart::before {
 
 .person-img {
   height: 80px;
-  /* background-color: red; */
   width: 80px;
   border-radius: 50px;
   margin-right: 15px;
