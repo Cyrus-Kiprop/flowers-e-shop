@@ -86,8 +86,7 @@ nav .cart::before {
 
 .welcome-section {
   height: 500px;
-  background:
-    url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
+  background: url(/assets/images/Transparent_Vase_with_Red_Tulips.png) 70% 10%
     no-repeat;
   background-size: 700px 600px;
   font-family: serif;
@@ -170,7 +169,7 @@ nav .cart::before {
 }
 
 .flower-image {
-  height: 236px;
+  /* height: 236px; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -606,4 +605,46 @@ nav .cart::before {
 
 .btn-sm-filter {
   width: 100%;
+}
+
+/* Responsive image */
+.image-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Trending flowers using the media queries instead of bootstrap */
+
+.trending-flowers-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.one {
+  grid-row: span 2;
+}
+
+@media only screen and (min-width: 968px) {
+  .one .card {
+    padding-bottom: 40%;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .one {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trending-flowers-container {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+
+  .one {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }
