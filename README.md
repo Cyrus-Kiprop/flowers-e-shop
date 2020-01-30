@@ -18,7 +18,7 @@ So far this is my biggest achievement.
 
 ## Preview:
 
-[Preview Link](https://raw.githack.com/Cyrus-Kiprop/flowers-e-shop/main-feature-branch/main-page.html)
+[Preview Link](https://pedantic-borg-ce20b7.netlify.com/)
 
 ## Sources:
 
