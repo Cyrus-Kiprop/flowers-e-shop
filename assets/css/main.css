@@ -621,18 +621,18 @@ nav .cart::before {
   gap: 30px;
 }
 
-.one {
+.image-one {
   grid-row: span 2;
 }
 
 @media only screen and (min-width: 968px) {
-  .one .card {
+  .image-one .card {
     padding-bottom: 40%;
   }
 }
 
 @media only screen and (max-width: 968px) {
-  .one {
+  .image-one {
     grid-row: span 1;
     grid-column: span 2;
   }
@@ -643,7 +643,7 @@ nav .cart::before {
     grid-template-columns: minmax(200px, 1fr);
   }
 
-  .one {
+  .image-one {
     grid-row: span 1;
     grid-column: span 1;
   }
